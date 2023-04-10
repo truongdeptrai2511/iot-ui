@@ -1,0 +1,54 @@
+.row {
+    display: inline-block;
+    flex-direction: row;
+    padding-left: 20%;
+}
+
+.card {
+    background-color: #F5DF4D; // Sử dụng tone màu chủ đạo của năm 2023
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+
+    // Sử dụng animation chuyên nghiệp
+    &:hover {
+        transform: scale(1.05);
+        transition: transform 0.2s ease-in-out;
+    }
+
+    // Thêm phần tử header và footer
+    &-header {
+        background-color: #333;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+
+    &-footer {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        padding-top: 10px;
+
+        // Thêm animation chuyên nghiệp cho button
+        button {
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px;
+            transition: background-color 0.2s ease-in-out;
+
+            &:hover {
+                background-color: #111;
+            }
+        }
+    }
+}
