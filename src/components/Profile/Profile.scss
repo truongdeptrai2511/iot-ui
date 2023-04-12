@@ -1,0 +1,21 @@
+.container{
+    align-content: center;
+    align-items: center;
+
+    .col-lg-12 {
+        display: flex;
+        margin: 0 auto;
+        padding: 5%;
+        
+
+        .row-lg-6 {
+            display: flex;
+            padding: 20px;
+
+            .infomation-user {
+                background-color: aquamarine;
+                list-style-type: none;
+            }
+        }
+    }
+}

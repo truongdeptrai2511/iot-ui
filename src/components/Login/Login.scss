@@ -1,31 +1,27 @@
 .row {
-    display: inline-block;
-    flex-direction: row;
-    padding-left: 20%;
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .card {
-    background-color: #F5DF4D; // Sử dụng tone màu chủ đạo của năm 2023
+    background-color: #f7f4e1; // Sử dụng tone màu chủ đạo của năm 2023
     border: none;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    padding: 20px;
-
-    // Sử dụng animation chuyên nghiệp
+    padding: 50px;
+    width: 40%;
+    margin: 0 auto;
+    // Sử dụng animation 
     &:hover {
         transform: scale(1.05);
-        transition: transform 0.2s ease-in-out;
+        transition: transform 0.2s ease-in;
     }
 
     // Thêm phần tử header và footer
-    &-header {
-        background-color: #333;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        color: #fff;
-        padding: 10px;
-        text-align: center;
-    }
+
 
     &-footer {
         border-bottom-left-radius: 10px;
@@ -47,7 +43,8 @@
             transition: background-color 0.2s ease-in-out;
 
             &:hover {
-                background-color: #111;
+                background-color: #ffffff;
+                color: #333;
             }
         }
     }
